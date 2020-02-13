@@ -1,3 +1,96 @@
+/**Styles body of page**/
+body {
+    background-color: #FEFEFF;
+    background-position: static;
+    background-size: 100%;
+    width: 100%;
+}
+
+/**Styles container for main body container**/
+#container {
+    position: relative;
+    margin: 120px auto;
+    width: 75%;
+    height: auto;
+    color: #fefeff;
+    background-color: rgba(91, 61, 40, 0.65);
+    border: 1px solid #fefeff;
+  }
+
+/**Styles page title**/
+.title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px auto;
+}
+
+/**Styles horizontal line after title**/
+hr {
+    width: 75%;
+    margin: auto;
+}
+
+/**Styles date at top**/
+#date {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/**Styles main blog entry text**/
+.blog-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin: 50px 40px;
+}
+
+/**Styles paragraph margins**/
+p {
+    margin: 25px auto;
+}
+
+/**Styles h3 headings**/
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    text-align: left;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+
+/**Styles class italic**/
+.italic {
+    font-style: italic;
+}
+
+/**Styles specifically the CSS box model diagram**/
+#css-box-model {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin: auto 35px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/**Styles example screenshots**/
+.example-images {
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+    margin: auto 35px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/**Styles signature**/
+#signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    padding-top: 10px;
+}
+
 /**Styles top navigation bar**/
 .nav-bar {
     overflow: hidden;
@@ -35,65 +128,6 @@
     color: #5B3D28;
     height: 60px;
   }
-
-/**Styles body of page**/
-body {
-    background-color: #FEFEFF;
-    background-position: static;
-    background-size: 100%;
-    width: 100%;
-}
-
-/**Styles container for main body**/
-#container {
-    position: relative;
-    margin: 120px auto;
-    width: 75%;
-    height: 1000px;
-    color: #fefeff;
-    background-color: rgba(91, 61, 40, 0.65);
-    border: 1px solid #fefeff;
-  }
-
-/**Styles page title**/
-.title, h3 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 100;
-    font-size: 50px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 50px auto;
-}
-
-/**Styles horizontal line**/
-hr {
-    width: 75%;
-    margin: auto;
-}
-
-/**Styles main text**/
-.text {
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-/**Styles unordered list**/
-ul {
-    text-align: left;
-    padding-top: 20px;
-}
-
-/**Styles list elements**/
-li {
-    margin: 15px auto;
-}
-
-/**Styles links to blog posts**/
-a {
-    color: inherit;
-}
 
 /**Styles footer**/
 .footer {

@@ -1,27 +1,100 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>The CSS Box Model: Padding, Borders and Margins</title>
     <meta charset="UTF-8">
-    <link href="your-stylesheet-link-here.css" rel="stylesheet" type="text/css">
+    <link href="../styles/blog.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
   
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
-    
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-    </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-    </p>
-    
-    <!-- this is a comment. -->
-  
+    <div class="nav-bar">
+      <a href="../index.html">HOME</a>
+      <a href="../about.html">ABOUT ME</a>
+      <a href="../blog.html">BLOG ENTRIES</a>
+    </div>
+
+    <div id="container">
+      <div class="title">
+        <p>The CSS Box Model:<br>Padding, Borders and Margins</p>
+      </div>
+      <hr>
+    <div class="blog-text">
+      <p id="date">Friday 14th February 2020</p>
+      
+      <p>I decided to write my technical blog post on the CSS box model as it’s something I find myself frequently getting confused with - I’m not sure if it’s just me, but I <span class="italic">always</span> seem to mix up padding and margins. 
+      In saying this, it’s a pretty simple concept once you wrap your head around it, so I wanted to try and explain it in layman’s terms to benefit my own learning, as well as anybody’s who’s reading this.</p>
+
+      <p>This is a diagram of the CSS box model:</p>
+
+      <img id="css-box-model" src="../images/sprint2-technical/css-box-model.png" alt="Diagram of the CSS box model">
+
+      <p>Doesn’t look too crazy, huh?</p> 
+      
+      <p>I find an easy analogy for the CSS box model is this:<br><br>
+      Imagine you’re standing on concrete and draw a circle around yourself with chalk. 
+      In this scenario, you would be the <span class="bold">content</span>, the space between where you’re standing and the chalk would be the <span class="bold">padding</span>, 
+      the chalk line itself would be the <span class="bold">border</span> and the space outside of the chalk line would be the <span class="bold">margin</span>.</p>
+
+      <p>So let’s break this down, starting with…</p>
+
+      <h3>Padding</h3>
+
+      <p>The padding properties are designed to control the space around the content of an element, but still inside the border. 
+
+      <p>You can set each side of an element’s padding individually, using “padding-top:”, “padding-left:” etc. 
+        or you can set them all at the same time by just putting one padding value. 
+        An example for a paragraph element with 30px padding might look like this:</p>
+        
+      <img class="example-images" src="../images/sprint2-technical/padding-1.png" alt="Example of code for giving a paragraph element 30px padding">
+      <img class="example-images" src="../images/sprint2-technical/padding-2.png" alt="Example of a paragraph element with 30px padding">
+
+      <h3>Borders</h3>
+
+      <p>Next up, borders. The border properties allow you to control the colour, width and style of a border.</p>
+
+      <p>Going back to our earlier scenario, you might have blue chalk, white chalk, pink chalk, or any other colour you fancy - this would be your border colour. 
+        You might draw a really thin line or a super thick line - this would be your border width. Lastly, you might draw a solid line, a dotted line, a dashed line… 
+        You get the picture - this would be your border style.</p>
+
+      <p>You could go through and define these properties individually, but luckily for us, these can all be defined in just one line of CSS. 
+        Here is an example of what a 3px wide, dotted blue border would look like:</p>
+
+        <img class="example-images" src="../images/sprint2-technical/border-1.png" alt="Example of code for giving an element a 3px dotted blue border">
+        <img class="example-images" src="../images/sprint2-technical/border-2.png" alt="Example of an element with a 3px dotted blue border">
+
+      <h3>Margins</h3>
+
+      <p>The margin properties are used to control the space around an element’s border.</p>
+
+      <p>You can either define each margin individually, as below:</p>
+
+      <img class="example-images" src="../images/sprint2-technical/margin-1.png" alt="Example of code for setting margin values individually">
+
+      <p>...Or, you can define them “shorthand”. Keep in mind that they must be defined in a clockwise order (top, right, bottom, left), like this:</p>
+
+      <img class="example-images" src="../images/sprint2-technical/margin-2.png" alt="Example of code for setting margin values shorthand">
+      <img class="example-images" src="../images/sprint2-technical/margin-3.png" alt="Example of an element with a top margin of 20px, a right margin of 30px, a bottom margin of 20px and a left margin of 200px">
+
+      <p>Something to note with margins is that if two elements are stacked on top of one another and they both have vertical margins defined, 
+        the margins will automatically collapse and take on only the <span class=”bold”>greater</span> margin’s value.</p>
+
+      <br>
+      <p>I could go much deeper into all of these functions of CSS and talk about their various uses and values, 
+        but for today I only wanted to do a brief introduction to the world of the CSS box model.</p>
+
+      <p>I hope this has helped you to understand padding, borders and margins a little more clearly.</p>
+
+      <p>Until next time!</p>
+      <p><span id="signature">Ellora</span></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+      <a id ="left" href="http://devacademy.co.nz/">Learn about EDA</a>
+      <a id ="right" href="https://github.com/ellora-virtue">My GitHub page</a>
+    </div>
   </body>
 </html>
