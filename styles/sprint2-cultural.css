@@ -54,6 +54,7 @@ p {
     margin: 25px auto;
 }
 
+/**Styles important headings**/
 .important {
     font-weight: bold;
     text-decoration: underline;
