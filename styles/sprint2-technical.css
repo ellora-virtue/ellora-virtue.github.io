@@ -37,6 +37,7 @@ hr {
 #date {
     font-weight: bold;
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 /**Styles main blog entry text**/
