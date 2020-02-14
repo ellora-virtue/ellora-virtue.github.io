@@ -33,6 +33,7 @@ hr {
     margin: auto;
 }
 
+/**Styles list elements**/
 .list li {
     font-weight: bold;
 }
@@ -71,33 +72,6 @@ h3 {
     text-align: left;
     text-decoration: underline;
     padding-top: 30px;
-}
-
-.list {
-    font-weight: 400px;
-}
-
-/**Styles class italic**/
-.italic {
-    font-style: italic;
-}
-
-/**Styles specifically the CSS box model diagram**/
-#css-box-model {
-    display: inline-block;
-    width: 400px;
-    height: auto;
-    margin: auto 35px;
-    box-shadow: 2px 2px 10px black;
-}
-
-/**Styles example screenshots**/
-.example-images {
-    display: inline-block;
-    width: 400px;
-    height: 150px;
-    margin: auto 35px;
-    box-shadow: 2px 2px 10px black;
 }
 
 /**Styles signature**/
