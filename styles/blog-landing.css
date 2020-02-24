@@ -56,13 +56,21 @@ body {
   }
 
 /**Styles page title**/
-.title, h3 {
+.title {
     font-family: "Raleway", sans-serif;
     font-weight: 100;
     font-size: 50px;
     text-transform: uppercase;
     text-align: center;
     padding: 50px auto;
+}
+
+/**Styles h4 headings**/
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin: 50px 40px 20px 40px;
 }
 
 /**Styles horizontal line**/
@@ -90,7 +98,6 @@ hr {
 /**Styles unordered list**/
 ul {
     text-align: left;
-    padding-top: 20px;
 }
 
 /**Styles list elements**/
