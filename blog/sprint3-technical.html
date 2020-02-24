@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sprint 3: JavaScript</title>
+        <meta charset="UTF-8">
+        <link href="../styles/sprint3-technical.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+        <div class="nav-bar">
+            <a href="../index.html">HOME</a>
+            <a href="../about.html">ABOUT ME</a>
+            <a href="../blog-landing.html">BLOG ENTRIES</a>
+        </div>
+
+        <div id="container">
+            <div class="title">
+                <p>Sprint 3: JavaScript</p>
+            </div>
+            <hr>
+            <div class="blog-text">
+                <p id="date">Monday 24th February 2020</p>
+            
+                <h3>HTML and CSS - an analogy that may or may not be original...</h3>
+
+                <p>I’ve been racking my brain trying to come up with an original analogy to explain HTML, CSS and how they work together… So I’m going to use a cake analogy.</p>
+
+                <p>Imagine a beautifully decorated, three-tier cake. In this analogy, HTML is the cake itself, made up of a blend of different ingredients to form the base. 
+                HTML might also define some of the decorations, for example the cake might have a photo on the top. CSS comes in to control how the cake is decorated, or “styled”. 
+                CSS would decide what shape each layer of the cake is, how high, what colour the icing is, where the decorations are placed, and so on.</p>
+
+                <h3>Control flow and loops</h3>
+            
+                <p><span class="italic">Control flow</span> is the order JavaScript is executed by the browser. This is important to recognise and make use of, 
+                as often times it may be causing a bug in your code or altering the way things should be running due to being in the wrong order.</p>
+
+                <p>Loops are a very useful part of JavaScript designed to allow you to repeat the same code over and over again until a certain condition is met. 
+                To save you writing out super repetitive code, there are three main looping options: <span class="italic">for</span> loops, <span class="italic">while</span> loops and <span class="italic">do while</span> loops.</p>
+                
+                <p><span class="italic">For</span> loops are the most commonly used and take three optional expressions in the head of the loop, along with a statement that is executed as long as the conditions are equal to true. 
+                For loops are used when you know the number of iterations you want the loop to do. The syntax of a for loop looks like this:</p>
+                
+                <img class="example-images" src="../images/sprint3-technical/forLoop.png" alt="Example of a for loop in JavaScript">
+
+                <p>The <span class="italic">while</span> loop is fairly similar to the for loop in terms of use, however it is predominantly used when you don’t know the number of iterations. 
+                The syntax also differs slightly:</p>
+                
+                <img class="example-images" src="../images/sprint3-technical/whileLoop.png" alt="Example of a while loop in JavaScript">
+
+                <p>Finally, the <span class="italic">do while</span> loop is different to the above two examples in that it first runs the specified statement and only <span class="italic">then</span> evaluates whether the condition is true or false. 
+                This means that even if the condition is false, the loop will always run at least once. The syntax for a do while loop is:</p>
+
+                <img class="example-images" src="../images/sprint3-technical/doWhileLoop.png" alt="Example of a do while loop in JavaScript">
+
+                <h3>What is the DOM?</h3>
+
+                <p>The DOM stands for the <span class="italic">Document Object Model</span>. It lives mostly behind the scenes, is made up of a tree of objects called <span class="italic">“nodes”</span> and looks pretty similar to a family tree 
+                (except each node only has one parent), as you can see here:</p>
+
+                <img id="diagram" src="../images/sprint3-technical/DOMTree.jpg" alt="Tree diagram of the Document Object Model">
+
+                <p>It starts at the top with your HTML document and then branches off to different sections of the website (e.g. head and body). 
+                Each of these sections then have various elements branching off them (their children - div, h2, p etc.) with different values. 
+                These can also have further children branching off them, and so on.</p>
+
+                <p>When you load a web page, the browser takes the HTML from wherever it may be stored and converts it into the DOM. 
+                From there, we can use JavaScript to manipulate HTML elements and add, change or remove things from our page.</p>
+
+                <p>The DOM could be very simple, as we see in the above diagram, or much more intricate and complicated-looking. 
+                In saying that, if you dive deep into each section of the DOM, it is not as difficult or complicated as it looks!</p>
+
+                <p>You can access the DOM from any webpage by right-clicking and selecting “Inspect”, which brings you to Google’s Developer Tools.</p>
+
+                <h3>Accessing data from arrays and objects</h3>
+
+                <p><span class="italic">Arrays</span> and <span class="italic">objects</span> are two of JavaScript’s data types.</p>
+
+                <p>An <span class="italic">array</span> is a collection of data used to store multiple values (as opposed to a variable which can only store one value). 
+                Each item in an array is contained within square brackets [ ], separated by a comma and given a number index 
+                (the first item starting at 0, second item at 1, and so on) in order to be easily accessible. Here is an example of a simple array:</p>
+
+                <img class="example-images" src="../images/sprint3-technical/arrayExample.png" alt="Example of an array in JavaScript">
+
+                <p><span class="italic">Objects</span> can store even more data, often storing multiple different data types (including arrays!). 
+                Objects hold data in a property, which has a key and one or multiple value/s. The properties are stored inside curly brackets { } and also separated by commas. 
+                To access properties within an object, you can use dot notation and/or bracket notation. A basic object might look like this:</p>
+                
+                <img class="example-images" src="../images/sprint3-technical/objectExample.png" alt="Example of an object in JavaScript">
+
+                <h3>A brief overview of functions</h3>
+
+                <p><span class="italic">Functions</span> are brilliant for writing an executable piece of code that has a function and can be used over and over again throughout your document.</p>
+
+                <p>It keeps code cleaner and tidier by not repeating the same thing again and again, and enables you to do all sorts of interesting things with JavaScript. 
+                (Note: you must define a function within the scope you wish to call it, e.g. global or local scope, otherwise it will not run.)</p>
+
+                <p>To define a function, the function keyword is used, followed by the function name (can be anything), a set of parentheses containing a list of parameters to be used by the function, 
+                and finally the statements that the function will execute surrounded by curly brackets - { }.</p>
+
+                <br>
+
+                <p>Phew, this was a long one! That's all from me for now so until next time...<br>
+                <br>
+                Adios!</p>
+
+                <p><span id="signature">Ellora</span></p>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <a id ="left" href="http://devacademy.co.nz/">Learn about EDA</a>
+            <a id ="right" href="https://github.com/ellora-virtue">My GitHub page</a>
+        </div>
+    </body>
+</html>
