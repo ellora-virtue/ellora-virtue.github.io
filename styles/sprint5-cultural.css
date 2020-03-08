@@ -33,6 +33,10 @@ hr {
     margin: auto auto 50px auto;
 }
 
+#second-title {
+    margin-top: 100px;
+}
+
 /**Styles date at top**/
 #date {
     font-weight: bold;
