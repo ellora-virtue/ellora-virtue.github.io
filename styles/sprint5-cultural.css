@@ -30,7 +30,7 @@ body {
 /**Styles horizontal line after title**/
 hr {
     width: 75%;
-    margin: auto;
+    margin: auto auto 50px auto;
 }
 
 /**Styles date at top**/
