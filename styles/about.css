@@ -146,14 +146,36 @@ img {
 
 /* Styles for mobile view */
 @media only screen and (max-width: 320px) {
-  body {
+
+  #container {
+    margin: 25px auto;
     width: 100%;
   }
+
+  .nav-bar {
+    position: relative;
+    display: inline-block;
+    height: 25px;
+  }
+  
+  .nav-bar a {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  #blog-text {
+    width: 100%;
+  }
+
+  #blog-text #main-text {
+    font-size: 16px;
+    width: 95%;
+  }
+
 }
 
 /* Styles for iPad/tablet view */
 @media only screen and (max-width: 768px) {
-
   img {
     width: 200px;
     height: 200px;
