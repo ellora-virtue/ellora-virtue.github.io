@@ -38,15 +38,15 @@ hr {
 }**/
 
 img {
-    width: 250px;
-    height: 250px;
-    border: 8px solid #fefeff;
-    border-radius: 50%;
-    margin: 50px 50px 25px 70px;
-    float: left;
-  }
+  width: 250px;
+  height: 250px;
+  border: 8px solid #fefeff;
+  border-radius: 50%;
+  margin: 50px 50px 25px 70px;
+  float: left;
+}
 
-  #intro {
+#intro {
     font-size: 20px;
 }
 
@@ -143,3 +143,51 @@ img {
     opacity: 0.75;
     height: 40px;
   }
+
+@media only screen and (max-width: 320px) {
+  body {
+    width: 100%;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #fefeff;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  #container {
+    text-align: center;
+  }
+
+  .image {
+    display: inline-block;
+  }
+
+  .title {
+    padding: 20px auto;
+  }
+  
+  #blog-text {
+    margin: 20px 10px;
+    text-align: center;
+  }
+
+  #intro {
+    font-size: 30px;
+  }
+
+  #blog-text p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  
+}
